@@ -1,0 +1,5 @@
+schema: https://admin-qa.crowshopping.com/graphql
+generates:
+  ./types/graphql.schema.ts:
+    plugins:
+      - typescript
