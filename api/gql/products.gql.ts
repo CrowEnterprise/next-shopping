@@ -1,5 +1,7 @@
 import {gql} from 'graphql-request'
 
+export {FIND_PRODUCTS}
+
 const FIND_PRODUCTS = gql`
   query GetProducts(
     $sort: String = "title:asc"

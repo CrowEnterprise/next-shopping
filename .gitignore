@@ -35,3 +35,4 @@ yarn-error.log*
 .idea
 types/graphql.schema.ts
 .env
+api/gql/schema.graphql

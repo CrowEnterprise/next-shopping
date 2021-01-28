@@ -4,15 +4,18 @@
   "scripts": {
     "start": "next start",
     "type-check": "tsc",
-    "dev": "yarn generate && next",
+    "dev": "yarn generate && next dev -p 1338",
     "build": "next build",
     "build:qa": "yarn generate:qa && yarn build:qa",
     "build:prod": "yarn generate:prod && yarn build:prod",
-    "generate": "graphql-codegen",
-    "generate:qa": "graphql-codegen --config ./codegen-qa.yaml",
-    "generate:prod": "graphql-codegen --config ./codegen-prod.yaml"
+    "generate": "graphql-codegen --config ./codegen/dev.yaml",
+    "generate:qa": "graphql-codegen --config ./codegen/qa.yaml",
+    "generate:prod": "graphql-codegen --config ./codegen/prod.yaml"
   },
   "dependencies": {
+    "@emotion/css": "^11.1.3",
+    "@emotion/react": "^11.1.4",
+    "@emotion/styled": "^11.0.0",
     "autoprefixer": "^10.2.3",
     "axios": "^0.21.1",
     "dayjs": "^1.10.4",
